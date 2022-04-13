@@ -34,7 +34,7 @@
             <li v-for="(link, i) in links" :key="i">
                 <a :href="`${link.url}`">
                     <img :src="require(`../assets/img/${link.img}`)" :alt="`${link.text}`">
-                    {{link.text}}
+                    <p>{{link.text}}</p>
                 </a>
             </li>
         </ul>
@@ -95,6 +95,15 @@ export default {
                     align-items: center;
                     color: white;
                     text-decoration: none;
+                    cursor: pointer;
+                    &:hover {
+                        img{
+                            transform: scale(1.1);
+                        }
+                        p {
+                            text-decoration: underline;
+                        }
+                    }
                     img {
                         height: 50px;
                         margin-right: 10px;
