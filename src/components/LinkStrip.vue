@@ -1,10 +1,39 @@
 <template>
-    <section class="link-strip">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+    <section class="link-strip">        
         <ul>
+            <!-- <li>
+                <a>
+                    <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    <p>DIGITAL COMICS</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                    <p>DC MERCHANDISE</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                    <p>SUBSCRIPTION</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                    <p>COMIC SHOP LOCATOR</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                    <p>DC POWER VISA</p>
+                </a>
+            </li> -->
             <li v-for="(link, i) in links" :key="i">
                 <a :href="`${link.url}`">
-                    <img :src="`../assets/img/${link.img}`" :alt="`${link.text}`">
+                    <img :src="require(`../assets/img/${link.img}`)" :alt="`${link.text}`">
                     {{link.text}}
                 </a>
             </li>
@@ -67,8 +96,8 @@ export default {
                     color: white;
                     text-decoration: none;
                     img {
-                        height: 60px;
-                        margin-right: 20px;
+                        height: 50px;
+                        margin-right: 10px;
                     }
                 }
             }
