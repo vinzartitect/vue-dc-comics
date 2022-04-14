@@ -68,7 +68,8 @@ export default {
                     url: '#',
                 },
                 {
-                    img: 'buy-dc-power-visa.svg',
+                    // img: 'buy-dc-power-visa.svg',
+                    img: 'buy-dc-power-visa-t.png',
                     text: 'DC POWER VISA',
                     url: '#',
                 },

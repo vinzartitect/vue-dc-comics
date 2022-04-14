@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComp/>
     <MainComp/>
-    <!-- <LinkStrip/> -->
+    <LinkStrip/>
     <FooterComp/>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
-// import LinkStrip from './components/LinkStrip.vue';
+import LinkStrip from './components/LinkStrip.vue';
 import FooterComp from './components/FooterComp.vue';
 
 export default {
@@ -18,7 +18,7 @@ export default {
   components: {
     HeaderComp,
     MainComp,
-    // LinkStrip
+    LinkStrip,
     FooterComp,
   }
 }
