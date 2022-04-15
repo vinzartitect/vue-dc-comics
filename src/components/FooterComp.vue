@@ -1,18 +1,21 @@
 <template>
     <footer>
 
-        <FooterNav/>            
+        <FooterNav/>
+        <FooterSocial/>          
 
     </footer>
 </template>
 
 <script>
 import FooterNav from './FooterNav.vue';
+import FooterSocial from './FooterSocial.vue';
 
 export default {
     name: 'FooterComp',
     components: {
-        FooterNav
+        FooterNav,
+        FooterSocial
     }
 }
 </script>
