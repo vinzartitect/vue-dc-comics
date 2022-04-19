@@ -1,17 +1,19 @@
 <template>
     <main>
-        <div>
-            <h1>-->Content goes here!!!</h1>
-        </div>        
+        <JumboTron/>
+        <!-- <ComicsBook/>            -->
     </main>
 </template>
 
 <script>
+import JumboTron from '../components/JumboTron.vue'
+// import ComicsBook from '../components/ComicsBook.vue'
 
 export default {
     name: 'MainComp',
     components: {
-        
+        JumboTron,
+        // ComicsBook,       
     }
 }
 </script>
