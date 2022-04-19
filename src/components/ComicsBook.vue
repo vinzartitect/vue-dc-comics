@@ -2,18 +2,22 @@
     <div class="container">
         <span class="series-label">CURRENT SERIES</span>
         
-        <!-- spazio per le cards -->
+        <ComicCards
+        v-for="comic, i in comics" :key="i"
+        :details="comic"
+        />
         
         <a href="" class="load-btn">LOAD MORE</a>
     </div>
 </template>
 
 <script>
+import ComicCards from '../components/ComicCards.vue'
 
 export default {
     name: 'ComicsBook',
     components: {
-        
+        ComicCards,        
     },
     data(){
         return{
@@ -104,15 +108,15 @@ export default {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 150px 0 75px;
+        padding: 50px 0 25px;
         position: relative;
 
         .series-label {
             position: absolute;
-            top: -30px;
+            top: -25px;
             color: white;
             background-color: #0282f9;
-            padding: 20px;
+            padding: 10px 20px;
             font-weight: bold;
             font-size: 1.4rem;
         }

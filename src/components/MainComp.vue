@@ -22,9 +22,5 @@ export default {
 <style scoped lang="scss">
 main {
     background-color: #1c1c1c;
-    color: white;
-    h1 {
-        padding: 50px 15%;
-    }
 }
 </style>

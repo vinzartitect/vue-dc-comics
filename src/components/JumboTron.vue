@@ -13,7 +13,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 div {
-    height: 450px;
+    height: 350px;
     img {
         height: 100%;
         width: 100%;
